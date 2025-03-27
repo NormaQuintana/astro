@@ -1,8 +1,8 @@
 ---
 const tasks = [
   "Estudiar Astro",
-  "Hacer la tarea de matemáticas",
-  "Preparar la presentación",
+  "Hacer la tarea de matematicas",
+  "Preparar la presentacion",
   "Leer un libro",
 ];
 ---
@@ -41,7 +41,15 @@ const tasks = [
     </ul>
 
     <!-- Botón rojo -->
-    <button class="big-red-button" id="helloButton">Haz clic aquí</button>
+    <button class="big-red-button" id="helloButton">Haz clic aqui</button>
+
+    <!-- Botón Norma -->
+    <button class="big-red-button" id="NormaButton">Mi nombre</button>
+
+    <!-- Mensaje "Mi nombre" -->
+    <div id="message" class="message" style="display: none;">
+      Norma Isabel Torales Quintana
+    </div>
 
     <!-- Mensaje "Hola, mundo" -->
     <div id="messageContainer" class="message" style="display: none;">
@@ -52,9 +60,14 @@ const tasks = [
     <script>
       const button = document.getElementById("helloButton");
       const messageContainer = document.getElementById("messageContainer");
+      const button2 = document.getElementById("NormaButton");
+      const message2 = document.getElementById("message");
 
       button.addEventListener("click", () => {
         messageContainer.style.display = "block"; // Muestra el mensaje
+      });
+      button2.addEventListener("click", () => {
+        message2.style.display = "block"; // Muestra el mensaje
       });
     </script>
   </body>
